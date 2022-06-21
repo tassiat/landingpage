@@ -1,0 +1,25 @@
+table, th, td{
+    color: #ecd6c4;
+    padding: 20px 10px 20px 10px;
+    border: 1px solid;
+    border-collapse: collapse;
+    border-spacing: 3px;
+    text-align: center;
+
+}
+.container{
+    margin: 50px;
+
+}
+.vscode , .bootstrap{
+    height: 45px;
+    border-radius: 5px;
+    transition: all 1s;
+    cursor: pointer;
+}
+.vscode:hover{
+transform: scale(1.5);
+}
+.bootstrap:hover{
+    transform: rotateZ(360deg);
+}

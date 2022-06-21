@@ -1,0 +1,18 @@
+#titulo{
+    font-family: 'righteous', cursive;
+    color: #ecd6c4;
+    font-size: 64px;
+    font-weight: 400;
+    margin-left: 7%;
+}
+.subtitulo{
+    font-family: 'sarala', sans-serif;
+    color: #ecd6c4;
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 7%;
+}
+#check{
+    display: inline-block;
+    color: #ecd6c4;
+}

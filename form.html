@@ -13,14 +13,102 @@
         <nav class="cabecalho-menu">
             <ul>
                 <li class="cabecalho-menu-lista"><a class="cabecalho-menu-item" href="index.html">Home</a></li>
-                <li class="cabecalho-menu-lista"><a class="cabecalho-menu-item">Tutorial</a></li>
+                <li class="cabecalho-menu-lista"><a class="cabecalho-menu-item" href="index.html ">Sobre</a></li>
                 <li class="cabecalho-menu-lista"><a class="cabecalho-menu-item" href="form.html">cadastro</a></li>
-                <li class="cabecalho-menu-lista"><a class="cabecalho-menu-item">Comandos</a></li>
+                <li class="cabecalho-menu-lista"><a class="cabecalho-menu-item" href="ferramentas.html">Ferramentas</a></li>
             </ul>
         </nav>
     </header>
-    <div>
+<div>
         <h1 id="titulo">Faça o seu cadastro aqui!</h1>
+        <h2 class="subtitulo">insira as suas informaçoes aqui</h2>
+</div>
+<form>
+    <fieldset class="grupo">
+        <div class="campo">
+            <label for="nome"><strong>Nome</strong></label>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+        <div class="campo">
+            <label for="sobrenome"><strong>sobrenome</strong></label>
+            <input type="text" name="sobrenome" id="sobrenome" required>
+        </div>
+    </fieldset>
+    <div class="campo">
+        <label for="email">
+            <strong>Email</strong>
+        </label>
+        <input type="email" name="email" id="email" placeholder="nome">
     </div>
+    <fieldset class="grupo">
+        <div class="campo">
+            <label for="senha">
+                <strong>Digite a sua senha</strong>
+            </label>
+            <input type="password" name="senha" id="senha">
+        </div>
+    </fieldset>
+    <div class="campo">
+        <label>
+            <strong>Qual a sua especialidade</strong>
+        </label>
+        <label>
+            <input type="radio" name="dev" value="frontend" checked>frontend
+        </label>
+        <label>
+            <input type="radio" name="dev" value="backend">BackEnd
+        </label>
+        <label>
+            <input type="radio" name="dev" value="fullstack">Fullstack
+        </label>
+    </div>
+    <div class="campo">
+        <label for="senioridade">
+            <strong>senioridade</strong>
+        </label>
+        <select id="senioridade" required>
+            <option selected disabled value="">Selecione</option>
+            <option>Junior</option>
+            <option>Pleno</option>
+            <option>Senior</option>
+        </select>
+    </div>
+    <fieldset class="grupo">
+        <div id="check">
+            <label><strong>Selecione as tecnologias que utiliza</strong>
+                <input type="checkbox" name="tecnologial1" id="tecnologia1" value="html">
+                <label for="tecnologia1">HTML</label>
+                <input type="checkbox" name="tecnologia2" id="tecnologia2" value="css">
+                <label for="tecnologia2">CSS</label>
+                <input type="checkbox" name="tecnologia3" id="tecnologia3" value="javascript">
+                <label for="tecnologia3">JavaScript</label>
+                <input type="checkbox" name="tecnologia4" id="tecnologia4" value="java">
+                <label for="tecnologia4">Java</label>
+                <input type="checkbox" name="tecnologia5" id="tecnologia5" value="php">
+                <label for="tecnologia5">PHP</label>
+                <input type="checkbox" name="tecnologia6" id="tecnologia6" value="python">
+                <label for="tecnologia6">Python</label>
+                <input type="checkbox" name="tecnologia7" id="tecnologia7" value="go">
+                <label for="tecnologia7">Go</label>
+            </div>
+    </fieldset>
+    <div class="campo">
+        <br>
+        <label for="experiencia">
+            <strong>Conte nos um pouco mais sobre suas experiencias:</strong>
+        </label>
+        <textarea name="experiencia" id="experiencia" cols="40" rows="6"></textarea>
+    </div>
+    <div class="campo">
+        <label for="arquivo">
+            <strong>Escolha uma foto</strong>
+        </label>
+        <input type="file" name="arquivo" id="arquivo">
+    </div>
+    <button class="btn" type="submit" onsubmit="">Enviar</button>
+</form>
+
+
 </body>
+
 </html>
