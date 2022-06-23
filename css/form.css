@@ -16,3 +16,54 @@
     display: inline-block;
     color: #ecd6c4;
 }
+form{
+    margin-left: 36%;
+    margin-top: 2%;
+}
+fieldset{
+    border: 0;
+}
+input, select, textarea, button{
+    font-family: 'sarala', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #8e5d52;
+    border: 0;
+    border-radius: 5px;
+    background-color: #fff2e7;
+    padding-left: 10px;
+    padding-right: 10px;
+    resize: none;
+}
+.grupo::before, .grupo::after{
+    display: table;
+}
+.grupo::after{
+    clear: both;
+}
+.campo{
+    margin-bottom: 1em;
+}
+.campo label{
+    margin-bottom: 0.2em;
+    color: #ecd6c4;
+    display: block;
+}
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+    border: 1px solid #fff2e7;
+}
+.btn{
+    background-color: #ecd6c4;
+    width: 4em;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    border: 0;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    padding: 0.2em 0.6em;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #fff2e7;
+    box-shadow: inset 2px 2px 2px (0,0,0,0.2);
+}
